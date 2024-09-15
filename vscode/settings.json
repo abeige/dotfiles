@@ -1,19 +1,48 @@
 {
-    "workbench.colorTheme": "Community Material Theme Lighter",
-    "python.defaultInterpreterPath": "/Users/adam/opt/miniconda3/bin/python",
-    "jupyter.askForKernelRestart": false,
-    "php.validate.executablePath": "/opt/homebrew/bin/php",
+    "workbench.colorTheme": "sublime-base16",
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
+    "window.newWindowProfile": "Default",
+
     "editor.fontSize": 14,
     "editor.fontWeight": "normal",
-    "editor.lineHeight": 1.5,
+    "editor.lineHeight": 1.3,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "trailing",
     "editor.dragAndDrop": false,
-    "editor.guides.indentation": false,
-    "githubPullRequests.createOnPublishBranch": "never",
+    "editor.occurrencesHighlight": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.fontFamily": "'Cascadia Code', Monaco, Menlo, 'Courier New', monospace",
+    "editor.trimAutoWhitespace": true,
 
+    "interactiveWindow.alwaysScrollOnNewCell": false,
+    "notebook.output.scrolling": true,
+    "notebook.lineNumbers": "on",
+    "jupyter.askForKernelRestart": false,
+
+    "git.openRepositoryInParentFolders": "always",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "snowflake.highlightQuery.enabled": false,
+    "snowflake.showExecuteAboveStatement.enabled": false,
+    "snowflake.connectionsConfigFile": "/Users/adam/.snowflake/connections.toml",
+    "[snowflake-sql]": {
+        "editor.semanticHighlighting.enabled": false
+    },
+
+    "python.defaultInterpreterPath": "/Users/adam/opt/miniconda3/bin/python",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "none"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+
+    "php.validate.executablePath": "/opt/homebrew/bin/php",
+
+    // "editor.lineNumbers": "relative",
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "underline",
     "vim.cursorStylePerMode.replace": "block",
@@ -61,51 +90,6 @@
     "vim.visualModeKeyBindings": [{
             "before": ["leader", "j"],
             "after": ["<Esc>"]
-    }],
-
-    "editor.lineNumbers": "relative",
-    "workbench.colorCustomizations": {
-        "editor.selectionBackground": "#ededed",
-        "editor.selectionHighlightBackground": "#ededed",
-        "editor.hoverHighlightBackground": "#ededed",
-        "editor.lineHighlightBackground": "#f6f6f6",
-        "editor.wordHighlightBackground": "#ededed",
-        "editor.wordHighlightStrongBackground": "#ededed",
-        // "editorBracketMatch.background": "#fda3316f",
-        // "editorBracketMatch.border": "#fda3316f",
-    },
-    "editor.tokenColorCustomizations": {
-        "comments": "#B0C4CE",
-        "textMateRules": [
-            {
-                "scope": "keyword.other",
-                "settings": {
-                    "foreground": "#39ADB5",
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "keyword.codetag.notation",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-        ]
-    },
-    "editor.bracketPairColorization.enabled": false,
-    "editor.guides.bracketPairsHorizontal": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "interactiveWindow.alwaysScrollOnNewCell": false,
-    "editor.fontFamily": "'Cascadia Code', Monaco, Menlo, 'Courier New', monospace",
-    "[python]": {
-        "editor.formatOnType": true
-    }, 
-    "[snowflake-sql]": {
-        "editor.semanticHighlighting.enabled": false,
-    },
-    "notebook.output.scrolling": true,
-    "notebook.lineNumbers": "on",
-    "snowflake.highlightQuery.enabled": false,
-    "snowflake.showExecuteAboveStatement.enabled": false,
-    "git.openRepositoryInParentFolders": "always",
+    }
+]
 }
