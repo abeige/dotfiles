@@ -1,0 +1,52 @@
+-- shorten function + options
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+
+-- leader key
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- save with s
+keymap("n", "s", ":w<cr>", opts)
+
+-- open file explore with leader + e
+keymap("n", "<leader>n", ":NERDTreeVCS<cr>", opts)
+keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>w", ":w<cr>", opts)
+keymap("n", "<leader>x", ":wqa<cr>", opts)
+
+-- window navigation
+keymap("n", "<A-h>", "<C-w>h", opts)
+keymap("n", "<A-j>", "<C-w>j", opts)
+keymap("n", "<A-k>", "<C-w>k", opts)
+keymap("n", "<A-l>", "<C-w>l", opts)
+keymap("n", "<A-d>", "<C-w>q", opts)
+keymap("n", "<A-v>", "<C-w>v", opts)
+
+-- resize windows
+keymap("n", "<C-S-k>", ":resize -2<cr>", opts)
+keymap("n", "<C-S-j>", ":resize +2<cr>", opts)
+keymap("n", "<C-S-h>", ":vertical resize -2<cr>", opts)
+keymap("n", "<C-S-l>", ":vertical resize +2<cr>", opts)
+
+-- navigate buffers
+keymap("n", "L", ":bn<cr>", opts)
+keymap("n", "H", ":bp<cr>", opts)
+keymap("n", "<leader>d", ":bd<cr>", opts)
+
+-- un-highlight search
+keymap("n", "<leader>h", ":noh<cr>", opts)
+
+-- insert mode
+keymap("i", "jk", "<esc>", opts)
+
+-- visual mode
+keymap("v", "p", '"_dP', opts)
+keymap("v", "<leader>j", "<esc>", opts)
+
+-- visual block
+keymap("x", "<leader>j", "<esc>", opts)
+keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
+
