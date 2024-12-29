@@ -42,7 +42,7 @@
 
     "php.validate.executablePath": "/opt/homebrew/bin/php",
 
-    // "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "relative",
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "underline",
     "vim.cursorStylePerMode.replace": "block",
@@ -51,6 +51,12 @@
     "vim.cursorStylePerMode.visualline": "block-outline",
     "vim.hlsearch": true,
     "vim.leader": " ",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-n>": false,
+        "<C-w>": false,
+    },
     "vim.normalModeKeyBindings": [
         {
             "before": ["s"],
@@ -75,17 +81,18 @@
         {
             "before": ["leader", "h"],
             "commands": [":noh"]
-        }
+        },
     ],
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "f"],
+            "before": ["j", "k"],
             "after": ["<Esc>"]
         }
     ],
-    "vim.visualModeKeyBindings": [{
-            "before": ["j", "f"],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["leader", "j"],
             "after": ["<Esc>"]
-    }
-]
+        },
+    ],
 }
