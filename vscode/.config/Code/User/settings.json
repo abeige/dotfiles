@@ -53,12 +53,8 @@
     "vim.leader": " ",
     "vim.normalModeKeyBindings": [
         {
-            "before": ["leader", "w"],
+            "before": ["s"],
             "commands": [":w"]
-        },
-        {
-            "before": ["leader", "q"],
-            "commands": [":q"]
         },
         {
             "before": ["H"],
@@ -83,12 +79,12 @@
     ],
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "k"],
+            "before": ["j", "f"],
             "after": ["<Esc>"]
         }
     ],
     "vim.visualModeKeyBindings": [{
-            "before": ["leader", "j"],
+            "before": ["j", "f"],
             "after": ["<Esc>"]
     }
 ]
