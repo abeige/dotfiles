@@ -7,10 +7,7 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- save with s
-keymap("n", "s", ":w<cr>", opts)
-
--- open file explore with leader + e
+-- open file explore with leader + n
 keymap("n", "<leader>n", ":NERDTreeVCS<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>w", ":w<cr>", opts)
@@ -39,7 +36,7 @@ keymap("n", "<leader>d", ":bd<cr>", opts)
 keymap("n", "<leader>h", ":noh<cr>", opts)
 
 -- insert mode
-keymap("i", "jk", "<esc>", opts)
+keymap("i", "<leader>j", "<esc>", opts)
 
 -- visual mode
 keymap("v", "p", '"_dP', opts)
